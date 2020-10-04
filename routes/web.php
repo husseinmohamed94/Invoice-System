@@ -32,3 +32,4 @@ Route::get('change-language/{locale}',['as' => 'frontend_change_locale','uses'=>
 
 
 Route::resource('/invoice','InvoiceController');
+//oute::post('invoice/store','InvoiceController@store')->name('invoice.store');

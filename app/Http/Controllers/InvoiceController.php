@@ -35,7 +35,27 @@ class InvoiceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+            
+        $data['Customer_name']       = $request->Customer_name;
+        $data['Customer_email']      = $request->Customer_email;
+        $data['Customer_mobile']     = $request->Customer_mobile;
+        $data['company_name']        = $request->company_name;
+        $data['invoice_number']      = $request->invoice_number;
+        $data['invoice_date']        = $request->invoice_date;
+
+        
+
+$details_list = [];
+for($i = 0; $i < count($request->prouduct_name); $i++){
+    $details_list[$i]['prouduct_name']      = $request->prouduct_name[$i];
+    $details_list[$i]['unit']               = $request->unit[$i];
+    $details_list[$i]['quantity']           = $request->quantity[$i];
+    $details_list[$i]['unit_price']         = $request->unit_price[$i];
+    $details_list[$i]['row_sub_total']      = $request->row_sub_total[$i];
+
+}
+dd($data,$details_list);
+
     }
 
     /**
@@ -46,7 +66,7 @@ class InvoiceController extends Controller
      */
     public function show($id)
     {
-        return view('frontend.show');
+      //  return view('frontend.show');
 
     }
 

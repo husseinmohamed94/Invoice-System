@@ -19,8 +19,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @if(config('app.locale') == 'ar')
     <link href="{{ asset('frontend/css/bootstrap-rtl.css') }}" rel="stylesheet">
-
     @endif
+    @yield('style')
+
 </head>
 <body>
     <div id="app">
@@ -70,6 +71,7 @@
      <!-- Scripts -->
      <script src="{{ asset('js/app.js') }}" ></script>
      <script src="{{ asset('frontend/js/fontawesome/all.min.js') }}" defer></script>
+    @yield('script')
 
 </body>
 </html>
