@@ -26,7 +26,7 @@ class CreateInvoicesTable extends Migration
             $table->decimal('discount_value',8,2)->default(0.00);
             $table->decimal('vat_value',8,2)->default(0.00);
             $table->decimal('shipping',8,2)->default(0.00);
-            $table->decimal('row_sub_total',8,2)->default(0.00);
+            $table->decimal('total_due',8,2)->default(0.00);
 
 
             $table->timestamps();

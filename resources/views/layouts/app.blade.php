@@ -61,7 +61,7 @@
 
         <main class="py-4">
         <div class="container">
-
+            @include('partial.flash')
               @yield('content')
 
             </div>
@@ -71,6 +71,14 @@
      <!-- Scripts -->
      <script src="{{ asset('js/app.js') }}" ></script>
      <script src="{{ asset('frontend/js/fontawesome/all.min.js') }}" defer></script>
+     <script>
+     $(function(){
+        $('#session-alert').fadeTo(2000,500).sliderUp(500,function () {
+            $('#session-alert').sliderUp(500);
+        })
+      //  $('.alert').alert()
+     });
+     </script>
     @yield('script')
 
 </body>

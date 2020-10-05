@@ -29,6 +29,15 @@ return [
      'VAT'                          =>'القيمه المضافه',
     'Shipping'                      =>'الشحن',
     'Total_Due'                    =>'السعر الاجمالي  ',
-    'save'                         =>'حفظ'
+    'save'                         =>'حفظ',
+
+    'created_Successfuly'       =>  ' تم الحفظ بنجاح ',
+    'created_failed'                   =>'فشل في الحفظ ',
+
+    'update_Successfuly'              =>' تم التعديل بنجاج ',
+    'update_failed'                   =>'هناك خطا  ',
+    'delete_Successfuly'              =>'تم حذ بنجاح',
+    'delete_failed'                   =>'فشل في حذف ',
+  
 
 ];

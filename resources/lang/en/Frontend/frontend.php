@@ -37,6 +37,13 @@ return [
   'Shipping '                        =>'Shipping',
   'Total_Due  '                      =>'Total_Due',
   'save'                             =>'save',
+  'created_Successfuly'              =>' created Successfuly',
+  'created_failed'                   =>'created failed',
+  'update_Successfuly'              =>' update Successfuly',
+  'update_failed'                   =>'created failed',
+  'delete_Successfuly'              =>' delete Successfuly',
+  'delete_failed'                   =>'delete failed',
+
 
 
 

@@ -24,8 +24,10 @@
             </div>
             
             <div class="card-body">
-                <form action="{{  route('invoice.store') }}" method="post" class="form">
-                  @csrf
+            
+                <form  action="{{route('invoice.store')}}" method="POST" class="form">
+                    @csrf
+              
                        <div class="row">
                                 <div class="col-4">
                                     <div class="form-group">
@@ -159,7 +161,9 @@
                             </table>
                         </div>
                     <div class="text-right pt-3">
-                        <button type="submit" name="save" class="btn btn-primary">{{__('Frontend/frontend.save')}}</button>
+                       
+                        <button class="btn btn-primary" name="save" type="submit">{{__('Frontend/frontend.save')}}</button>
+
                     </div>
                  </form>
 
@@ -301,7 +305,7 @@
            $('input.row_sub_total').each(function() { $(this).rules("add",{required:true}); });
 
 
-        e.preventDefault();
+       
        });
 
 

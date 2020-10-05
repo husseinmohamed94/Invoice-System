@@ -33,3 +33,10 @@ Route::get('change-language/{locale}',['as' => 'frontend_change_locale','uses'=>
 
 Route::resource('/invoice','InvoiceController');
 //oute::post('invoice/store','InvoiceController@store')->name('invoice.store');
+
+/*
+Route::get('/index', 'InvoiecsController@index')->name('index');
+Route::get('invoice/create', 'InvoiecsController@create')->name('invoice.create');
+
+Route::post('invoice/store', 'InvoiecsController@store')->name('invoice.store');
+*/
