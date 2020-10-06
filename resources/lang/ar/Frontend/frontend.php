@@ -6,6 +6,7 @@ return [
     */
 
     'invoice_system'                 => 'نظام فواتير',
+    'invoices'                       =>'الفواتير',
     'Create Invoice'                 => 'انشاء فاتوره',
     'Customer_nam'                   => 'اسم العميل',
     'Customer_email'                 => 'اميل العميل',
@@ -31,6 +32,7 @@ return [
     'Total_Due'                    =>'السعر الاجمالي  ',
     'save'                         =>'حفظ',
 
+    'actions'                     =>'العميليات',
     'created_Successfuly'       =>  ' تم الحفظ بنجاح ',
     'created_failed'                   =>'فشل في الحفظ ',
 
@@ -38,6 +40,9 @@ return [
     'update_failed'                   =>'هناك خطا  ',
     'delete_Successfuly'              =>'تم حذ بنجاح',
     'delete_failed'                   =>'فشل في حذف ',
+    'add_invoices'                    =>'انشاء فاتوره',
+    'r_u_sure'                        =>'هل انت متاكد من حذف فاتوره' ,
+         
   
 
 ];

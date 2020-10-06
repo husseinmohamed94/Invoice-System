@@ -73,8 +73,8 @@
      <script src="{{ asset('frontend/js/fontawesome/all.min.js') }}" defer></script>
      <script>
      $(function(){
-        $('#session-alert').fadeTo(2000,500).sliderUp(500,function () {
-            $('#session-alert').sliderUp(500);
+        $('#session-alert').fadeTo(2000,500).slideUp(500,function () {
+            $('#session-alert').slideUp(500);
         })
       //  $('.alert').alert()
      });

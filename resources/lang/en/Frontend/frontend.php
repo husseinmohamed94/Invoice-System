@@ -13,6 +13,7 @@ return [
     */
 
   'invoice_system'                   => 'Invoice System',
+  'invoices'                         =>'invoices',
   'Create Invoice'                   =>  'Create Invoice' ,
   'Customer_nam'                     => 'Customer_nam',
   'Customer_email'                   =>'Customer_email',
@@ -37,12 +38,16 @@ return [
   'Shipping '                        =>'Shipping',
   'Total_Due  '                      =>'Total_Due',
   'save'                             =>'save',
+  'actions'                          =>'action',
   'created_Successfuly'              =>' created Successfuly',
   'created_failed'                   =>'created failed',
   'update_Successfuly'              =>' update Successfuly',
   'update_failed'                   =>'created failed',
   'delete_Successfuly'              =>' delete Successfuly',
   'delete_failed'                   =>'delete failed',
+  'add_invoices'                    =>' add invoices',
+  'r_u_sure'                        =>'are you sure',
+  
 
 
 

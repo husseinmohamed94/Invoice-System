@@ -22,10 +22,10 @@ class CreateInvoicesTable extends Migration
             $table->string('invoice_number');
             $table->date('invoice_date');
             $table->decimal('sub_total',8,2)->default(0.00);
-            $table->string('discount_type',8,2)->default(0.00);
+            $table->string('discount_type',8,2)->default(0.00)->nullable();
             $table->decimal('discount_value',8,2)->default(0.00);
             $table->decimal('vat_value',8,2)->default(0.00);
-            $table->decimal('shipping',8,2)->default(0.00);
+            $table->decimal('shipping',8,2)->default(0.00)->nullable();
             $table->decimal('total_due',8,2)->default(0.00);
 
 

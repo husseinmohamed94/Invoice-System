@@ -14,7 +14,8 @@ class InvoiceController extends Controller
      */
     public function index()
     {
-       return view('frontend.index');
+         $invoices = Invoice::orderBy('id','desc')->paginate(10);
+       return view('frontend.index',compact('invoices'));
     }
 
     /**
@@ -63,17 +64,15 @@ for($i = 0; $i < count($request->prouduct_name); $i++){
 }
  $details = $invoice->details()->createMany($details_list);
 //$details = InvoiceDetails::create($details_list);
-if($details){
-    
-
-    return redirect()->back()->with([
-        'message' =>__('frontend/frontend.created_Successfuly'),
-        'alert-type' => 'success']);
-}else{
+if(!$details){
     return redirect()->back()->with(['message' =>__('frontend/frontend.created_failed'),'alert-type'=> 'danger']);
 
-}
 
+ 
+}
+return redirect()->back()->with([
+    'message' =>__('frontend/frontend.created_Successfuly'),
+    'alert-type' => 'success']);
     }
 
     /**
@@ -85,7 +84,8 @@ if($details){
     public function show($id)
     {
       //  return view('frontend.show');
-
+      $invoice = Invoice::findOrFail($id);
+      return view('frontend.show',compact('invoice'));
     }
 
     /**
@@ -120,6 +120,14 @@ if($details){
      */
     public function destroy($id)
     {
-        //
+        $invoice = Invoice::findOrFail($id);
+        if($invoice){
+           $invoice->delete();
+           
+           return redirect()->back()->with(['message' =>__('frontend/frontend.delete_Successfuly'),'alert-type'=> 'success']);
+
+        }else{
+        return redirect()->back()->with(['message' =>__('frontend/frontend.delete_failed'),'alert-type'=> 'danger']);
+        }
     }
 }
