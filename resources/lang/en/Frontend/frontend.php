@@ -14,6 +14,8 @@ return [
 
   'invoice_system'                   => 'Invoice System',
   'invoices'                         =>'invoices',
+  'Invoice'                        =>'Invoice #:invoice_number',
+
   'Create Invoice'                   =>  'Create Invoice' ,
   'Customer_nam'                     => 'Customer_nam',
   'Customer_email'                   =>'Customer_email',
@@ -34,9 +36,9 @@ return [
   'Discount'                         =>' Discount',
   'parcentage'                       =>'parcentage',
   'SR'                               =>'SR',
-  'VAT '                             =>'VAT(5%)',
-  'Shipping '                        =>'Shipping',
-  'Total_Due  '                      =>'Total_Due',
+  'VAT'                             =>'VAT(5%)',
+  'Shipping'                        =>'Shipping',
+  'Total_Due'                      =>'Total_Due',
   'save'                             =>'save',
   'actions'                          =>'action',
   'created_Successfuly'              =>' created Successfuly',
@@ -47,6 +49,9 @@ return [
   'delete_failed'                   =>'delete failed',
   'add_invoices'                    =>' add invoices',
   'r_u_sure'                        =>'are you sure',
+  'back_to_invoice'                 => 'back to invoice',
+  'update'                          =>'update',
+
   
 
 

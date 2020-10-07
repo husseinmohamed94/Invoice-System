@@ -7,12 +7,14 @@ return [
 
     'invoice_system'                 => 'نظام فواتير',
     'invoices'                       =>'الفواتير',
+    'Invoice'                        =>'فاتوره #:invoice_number',
+    
     'Create Invoice'                 => 'انشاء فاتوره',
     'Customer_nam'                   => 'اسم العميل',
     'Customer_email'                 => 'اميل العميل',
     'Customer_mobile'                => 'رقم العميل',
     'company_name'                   => ' اسم الشركه',
-    'invoice_number'                 => 'اسم العميل',
+    'invoice_number'                 => ' رقم الفاتوره',
     'invoice_date'                   => 'تاريخ فاتوره',
     'prouduct_name'                  => 'اسم الصنف',
     'unit'                           =>  ' عدد',
@@ -42,7 +44,8 @@ return [
     'delete_failed'                   =>'فشل في حذف ',
     'add_invoices'                    =>'انشاء فاتوره',
     'r_u_sure'                        =>'هل انت متاكد من حذف فاتوره' ,
-         
+    'back_to_invoice'                 =>' العوده الي الفواتير',
+    'update'                          =>'تعديل'
   
 
 ];
