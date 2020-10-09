@@ -45,7 +45,12 @@ return [
     'add_invoices'                    =>'انشاء فاتوره',
     'r_u_sure'                        =>'هل انت متاكد من حذف فاتوره' ,
     'back_to_invoice'                 =>' العوده الي الفواتير',
-    'update'                          =>'تعديل'
+    'update'                          =>'تعديل',
+    'invoice_details'                 => 'التفاصيل',
+    'print'                           =>'طباعه',
+    'print_pdf'                       =>'تصدير الي PDF',
+  'send_to_email'                   => 'ارسل الي اميل'
+
   
 
 ];

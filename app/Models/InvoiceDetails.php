@@ -16,4 +16,17 @@ class InvoiceDetails extends Model
     public function invoice(){
         return $this->belongsTo(Invoice::class,'invoice_id','id');
     }
+    public function unitText(){
+
+    if($this->unit =='price'){
+      $text = __('Frontend/frontend.price');
+    } elseif($this->unit =='g'){
+      $text = __('Frontend/frontend.Gram');
+    } elseif($this->unit =='kg'){
+      $text = __('Frontend/frontend.kilo_Gram');
+
+      }
+      return $text;
+    } 
+   
 }

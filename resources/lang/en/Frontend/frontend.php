@@ -26,7 +26,7 @@ return [
   'prouduct_name'                    => 'prouduct_name',
   'unit'                             =>  ' unit',
   'quantity'                         =>'quantity',
-  'unit_price'                       =>' unit_price', 
+  'unit_price'                       =>' unit price', 
   'row_sub_total'                    =>'row_sub_total',
   'price'                            =>'price',
   'Gram'                             =>'g',
@@ -51,6 +51,10 @@ return [
   'r_u_sure'                        =>'are you sure',
   'back_to_invoice'                 => 'back to invoice',
   'update'                          =>'update',
+  'invoice_details'                 =>'invoice details',
+  'print'                           =>'print',
+  'print_pdf'                       =>'Expart to PDF',
+  'send_to_email'                   => 'send to email'
 
   
 
